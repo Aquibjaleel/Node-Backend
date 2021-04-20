@@ -1,0 +1,119 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(rel='stylesheet' href='/assets/bootstrap/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css' integrity='sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==' crossorigin='anonymous')
+  link(rel='stylesheet' href='/assets/css/style.css')
+section#showcase
+  nav.navbar.navbar-expand-lg.navbar-dark.custom-nav
+    .container
+      a.navbar-brand(href='#')
+        img(src='/assets/img/logo.svg' alt='logo')
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarText' aria-controls='navbarText' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarText.collapse.navbar-collapse
+        ul.navbar-nav.mb-2.mb-lg-0
+          li.nav-item
+            a.nav-link.active(aria-current='page' href='#') Home
+          li.nav-item
+            a.nav-link(href='#') About Us
+          li.nav-item
+            a.nav-link(href='#') Contact Us
+          li.nav-item
+            a.nav-link(href='#')
+              i.fas.fa-shopping-cart
+  .header-text
+    if isFound
+      h1 SUMMER COLLECTION of #{name}
+    else 
+      h1 Not found
+    h4 Upto 70% OFF
+    a.btn(href='/home') Explore Now
+section.sec-padd
+  .header-new
+    h1
+      | Trending Now
+    .container
+      .row
+        .col-4
+          .card
+            img.card-img-top(src='/assets/img/myntra-la-la.jpg' alt='Card image cap')
+            .card-body
+              h5.card-title Card title
+              p.card-text New shopping site sdlsdljhdsjshd
+              a.btn.btn-primary(href='#') Add to cart
+        .col-4
+          .card
+            img.card-img-top(src='/assets/img/myntra-la-la.jpg' alt='Card image cap')
+            .card-body
+              h5.card-title Card title
+              p.card-text New shopping site sdlsdljhdsjshd
+              a.btn.btn-primary(href='#') Add to cart
+        .col-4
+          .card
+            img.card-img-top(src='/assets/img/myntra-la-la.jpg' alt='Card image cap')
+            .card-body
+              h5.card-title Card title
+              p.card-text New shopping site sdlsdljhdsjshd
+              a.btn.btn-primary(href='#') Add to cart
+section#trend
+  .container-fluid.nextr
+    .row
+      .col-md-6
+        h1.dress
+          | CLOTHING 
+          br
+          |  50%OFF
+      .col-6
+section.sec-padd
+  .container
+    .row
+      .col-md-6.shopp
+        .benz
+          img(src='/assets/img/men.jpg' alt='')
+          h3 MEN
+      .col-md-6.shopp
+        .benz
+          img(src='/assets/img/women.jpg' alt='')
+          h3
+            | WOMEN
+      .col-md-6.shopp
+        .benz
+          img(src='/assets/img/pexels-andrew-neel-3178875@2x.jpg' alt='')
+          h3 KIDS
+      .col-md-6.shopp
+        .benz
+          img(src='/assets/img/pexels-brett-sayles-1073083@2x.jpg' alt='')
+          h3
+            | MORE
+section
+  footer
+    .container.audi
+      .row
+        .col-4
+          a(href='#')
+            img.log(src='/assets/img/logo.svg' alt='logo')
+          p this is new site welcome
+        .col-4.sub
+          h3 QUICK LINKS
+          ul
+            li
+              a(href='#') Home
+            li
+              a(href='#') About us
+            li
+              a(href='#') Contact US
+        .col-4.sub
+          h3
+            | CONTACT US
+          p  Kochi kerala,India
+          a(href='#')
+            i.fa.fa-phone.logoo(aria-hidden='true')
+            | +919447411068
+    .kochi
+      p Copyright@2021 hanger-All right reserved
+script.
+script(src='/assets/bootstrap/js/bootstrap.min.js')
